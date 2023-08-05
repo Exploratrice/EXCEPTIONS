@@ -29,7 +29,6 @@ public class ShopRepositoryTest {
         repo.add(product1);
         repo.add(product2);
         repo.add(product3);
-        repo.remove(24);
 
         Assertions.assertThrows(NotFoundException.class,
                 () -> repo.remove(24)
